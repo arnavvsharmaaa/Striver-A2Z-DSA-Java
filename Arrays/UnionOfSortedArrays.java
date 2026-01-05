@@ -1,3 +1,29 @@
+// Problem: Union of Two Sorted Arrays
+// Description:
+// Given two sorted arrays arr1 and arr2 of sizes n and m respectively,
+// find the union of the two arrays. The union contains all unique elements
+// present in either of the arrays and the result should be in sorted order.
+//
+// Example:
+// Input:
+// arr1 = [1, 2, 2, 3, 4]
+// arr2 = [2, 3, 5, 6]
+//
+// Output:
+// [1, 2, 3, 4, 5, 6]
+//
+// Approach:
+// Use the two-pointer technique to traverse both arrays simultaneously.
+// Compare elements from both arrays, add the smaller element to the result
+// while avoiding duplicates. If both elements are equal, add it once and
+// move both pointers. After one array is exhausted, add the remaining
+// unique elements from the other array.
+//
+// Time Complexity: O(n + m)
+// Space Complexity: O(n + m)
+
+
+
 import java.util.ArrayList;
 
 public class UnionOfSortedArrays {
